@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Register</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    
+    <div class="validator">
+        <!--   Form đăng kí   -->
+        <form id="register" class="form" action="" method="POST">
+            <h2 class="form-head">Đăng ký</h2>
+
+            <div class="form-group">
+                <input rules="required" type="text" name="fullname" id="full-name" class="form-control" placeholder="Tên đầy đủ">
+                <span class="form-message"></span>
+            </div>
+            <div class="form-group">
+                <input rules="required|email" type="text" name="email" id="email" class="form-control" placeholder="Email">
+                <span class="form-message"></span>
+            </div>
+            <div class="form-group">
+                <input rules="required|min:6" type="password" name="password" id="password" class="form-control" placeholder="Password">
+                <span class="form-message"></span>
+            </div>
+            <div class="form-group">
+                <input rules="required|confirmPassword" type="password" name="confirm-password" id="confirm-password" class="form-control" placeholder="Confirm password">
+                <span class="form-message"></span>
+            </div>
+
+            <button class="form-submit">Đăng ký</button>
+
+            <div class="form-comment">
+                <p class="form-comment--text">Bạn đã có tài khoản?</p>
+                <a href="#">Đăng nhập</a>
+            </div>
+        </form>
+
+
+        <!--   Form đăng nhập   -->
+        <form id="login" class="form" action="" method="POST">
+            <h2 class="form-head">Đăng nhập</h2>
+
+            <div class="form-group">
+                <input rules="required|email" type="text" name="email" id="email" class="form-control" placeholder="Email">
+                <span class="form-message"></span>
+            </div>
+            <div class="form-group">
+                <input rules="required|min:6" type="text" name="password" id="password" class="form-control" placeholder="Password">
+                <span class="form-message"></span>
+            </div>
+
+            <button class="form-submit">Đăng nhập</button>
+
+            <div class="form-comment">
+                <p class="form-comment--text">Bạn chưa có tài khoản?</p>
+                <a href="#">Đăng ký</a>
+            </div>
+        </form>
+    </div>
+
+    <script type="module" src="./main.js"></script>
+</body>
+</html>

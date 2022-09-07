@@ -1,0 +1,108 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+html{
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+.validator{
+    position: relative;
+    min-height: 100vh;
+    padding: 80px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(120deg, #00c9ff, #92fe9d);
+}
+
+.form{
+    width: 400px;
+    height: 550px;
+    padding: 0 30px;
+    border-radius: 14px;
+    background-color: white;
+}
+
+.form-head{
+    padding: 50px 0;
+    text-align: center;
+    font-size: 3.2rem;
+}
+
+.form-group + .form-group{
+    margin-top: 30px;
+}
+
+.form-group.invalid .form-control{
+    border-color: rgb(243, 14, 14);
+}
+
+.form-group.valid .form-control{
+    border-color: rgb(13, 109, 218);
+}
+
+.form-group.invalid .form-message{
+    color: rgb(243, 14, 14);
+}
+
+.form-control {
+    width: 100%;
+    padding: 2px;
+    border: none;
+    outline: none;
+    font-size: 1.6rem;
+    border-bottom: 2px solid #adadad;
+}
+
+.form-control:hover{
+    border-color: rgb(124, 124, 220);
+}
+
+.form-message{
+    display: block;
+    font-size: 1.4rem;
+    padding: 4px 2px;
+}
+
+.form-submit{
+    margin-top: 50px;
+    width: 100%;
+    padding: 16px;
+    font-size: 1.8rem;
+    border: none;
+    outline: none;
+    color: white;
+    font-weight: 600;
+    border-radius: 50px;
+    background-color: #329ee7;
+    cursor: pointer;
+}
+
+.form-submit:hover{
+    background-color: #2b89c7;
+}
+
+.form-comment{
+    margin-top: 24px;
+    display: flex;
+    justify-content: center;
+    font-size: 1.4rem;
+}
+
+.form-comment--text{
+    margin-right: 6px;
+}
+
+
+
+/*  form đăng nhập  */
+#login{
+    position: absolute;
+}
